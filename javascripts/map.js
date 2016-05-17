@@ -1,4 +1,25 @@
-var styles = [ { "featureType": "water", "elementType": "geometry", "stylers": [ { "visibility": "simplified" }, { "hue": "#007fff" }, { "saturation": 1 }, { "color": "#007fff" }, { "lightness": 65 } ] },{ "featureType": "landscape", "stylers": [ { "color": "#008080" } ] },{ "featureType": "road.local", "stylers": [ { "visibility": "off" } ] },{ "featureType": "road", "stylers": [ { "hue": "#0055ff" }, { "color": "#0055ff" }, { "visibility": "on" }, { "lightness": 43 } ] },{ "featureType": "landscape.natural", "stylers": [ { "color": "#00ffaa" }, { "lightness": -50 } ] },{ } ];
+var styles = [
+    {
+      stylers: [
+        { hue: "#00ffe6" },
+        { saturation: -20 }
+      ]
+    },{
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
+    }
+  ];
+
 
 var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
 function loadMap() {
