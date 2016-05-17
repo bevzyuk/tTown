@@ -12,6 +12,10 @@ header {
 	color: darkgreen;
 }
 
+h3 {
+	color:red;
+}
+
 #sample {
 	margin: 0 auto;
 	width: 100%;
