@@ -69,7 +69,7 @@ function loadMap() {
             });
 
              var infowin = new google.maps.InfoWindow({
-               content: '<div id = "content"><img src="images/car.png"></img>Place were we are first met :)</div>',
+               content: '<div><img src="images/car.png"></img>Place were we are first met :)</div>',
             });
 
             var infowindow = new google.maps.InfoWindow({
