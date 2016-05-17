@@ -38,6 +38,10 @@ function loadMap() {
             map.mapTypes.set("map_style", styledMap);
             map.setMapTypeId("map_style");
 
+            /*
+                  add some marker
+            */
+
             var marker = new google.maps.Marker({
                position: new google.maps.LatLng(50.4102576,30.6156543),
                map: map,
@@ -52,7 +56,14 @@ function loadMap() {
                position: new google.maps.LatLng(50.462513,30.4800016),
                map: map,
             });
+            var georgianRestoraunt = new google.maps.Marker({
+               position: new google.maps.LatLng(50.4456063,30.4999284),
+               map: map,
+            });
 
+            /*
+               add info about marker
+            */
             var infocoffe = new google.maps.InfoWindow({
                content: "Тут ми пили каву під зонтом",
             })
@@ -64,9 +75,16 @@ function loadMap() {
             var infowindow = new google.maps.InfoWindow({
                content: "We are living here!!",
             });
+            var restoraunt = new google.maps.InfoWindow({
+               content: "Самий крутий грузинський ресторан Києва",
+            });
 
+            /*
+               Show info at the map
+            */
            infowin.open(map,firstMeet);
            infocoffe.open(map,coffeRainig);
+           restoraunt.open(map,georgianRestoraunt);
 
            //Zoom to 7 when clicked on marker
             google.maps.event.addListener(marker,'click',function() {
