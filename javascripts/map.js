@@ -76,7 +76,7 @@ function loadMap() {
                content: "We are living here!!",
             });
             var restoraunt = new google.maps.InfoWindow({
-               content: "Самий крутий грузинський ресторан Києва",
+               content: '<div id = "content"><img src="images/car.png"></img>Самий крутий <br> грузинський ресторан Києва</div>',
             });
 
             /*
