@@ -66,11 +66,11 @@ function loadMap() {
             */
             var infocoffe = new google.maps.InfoWindow({
                content: "Тут ми пили каву під зонтом",
-            })
+            });
 
              var infowin = new google.maps.InfoWindow({
                content: '<div id = "content"><img src="images/car.png"></img>Place were we are first met :)</div>',
-            })
+            });
 
             var infowindow = new google.maps.InfoWindow({
                content: "We are living here!!",
